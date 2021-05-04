@@ -35,6 +35,7 @@ public class Postagem {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date date = new java.sql.Date(System.currentTimeMillis());
 
+	@ManyToOne
 	private Tema tema;
 
 	public long getId() {
